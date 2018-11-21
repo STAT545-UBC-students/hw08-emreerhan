@@ -1,7 +1,3 @@
----
-output: html_document
-runtime: shiny
----
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -9,6 +5,7 @@ library(dplyr)
 bcl <- read.csv("bcl-data.csv", stringsAsFactors = FALSE)
 
 ui <- fluidPage(
+  img(src = "logo.png", height = "100px", width = "900px"),
   titlePanel("BC Liquor Store prices"),
   sidebarLayout(
     sidebarPanel(
