@@ -19,9 +19,10 @@ ui <- fluidPage(
       uiOutput("countryOutput")
     ),
     mainPanel(
-      plotOutput("coolplot"),
-      br(), br(),
-      DT::dataTableOutput()("results")
+      tabsetPanel(type = "tabs",
+                  tabPanel("Plot", plotOutput("coolplot")),
+                  tabPanel("Table", DT::dataTableOutput("results"))
+      )
     )
   )
 )
