@@ -1,6 +1,6 @@
 # hw08-seed
 
-![BCL logo](www/logo.png "BCL logo")
+![BCL logo](bcl-rshiny/www/logo.png "BCL logo")
 
 This repo contains the BC Liquor app as a boilerplate for students to add to in Homework 08.
 
